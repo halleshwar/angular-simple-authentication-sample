@@ -1,0 +1,6 @@
+Token: {{ auth.token$ | async }}<br>
+
+<button (click)="login('test', 'test')">Login</button>
+<button (click)="login('test', 'test1')">Wrong login</button>
+<button (click)="auth.logout()">Logout</button>
+<button (click)="testUnauthorized()">Test unauthorized request with renewal of the token</button>
